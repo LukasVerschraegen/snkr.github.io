@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tailwind test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+  	gsap.from('.shoe', { duration: 2.5, y:'-100%'});
+  </script>
+</head>
+<body>
+
+
+
+
+
+<header>
+  <nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+  	<a href="#" class="flex items-center flex-shrink-0 text-white mr-16">
+  		<img src="foto's/logo.png" alt="Product screenshot" class="fill-current h-6 w-24 mr-3" width="305" height="109">
+        <span class="font-bold text-xl tracking-tight">SNKR</span>
+    </a>
+    
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="categorie/men.html" class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+        <a href="categorie/woman.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMAN</a>
+        <a href="categorie/kids.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">KIDS</a>
+      </div>
+
+      <div>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign in</a>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign up</a>
+        <a href="checkout/winkelmand.html" class="inline-block ml-16">
+        	<span style="font-size: 1.5em; color: white;">
+		  			<i class="fas fa-cart-plus"></i>
+			</span>
+        </a>	
+		
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+<main>
+ <div class="overflow-hidden bg-white py-24 sm:py-6">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-40">
+          <div class="lg:max-w-lg">
+            <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Welkom to:</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">SNKR</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Hier vind je de meest exclusieve sneakers voor zowel mannen, vrouwen als kinderen.
+            U kan elke schoen bekijken in 3D en kan eventueel ook zelf een customizen.</p>
+          </div>
+        </div>
+        <img src="foto's/sneakersinvers.png" alt="Product screenshot" class="shoe w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="1024" height="1024">
+      </div>
+    </div>
+  </div>
+
+<section class="bg-white dark:bg-gray-900 m-16">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md sm:text-center">
+          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+          <form action="#">
+              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                  <div class="relative w-full">
+                      <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                      </div>
+                      <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                  </div>
+                  <div>
+                      <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                  </div>
+              </div>
+              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+          </form>
+      </div>
+  </div>
+</section>
+
+	<div class="bg-lime-400">
+	  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+	    <h2 class=" inline-block mr-8 text-2xl font-bold tracking-tight text-gray-900">MEN</h2>
+	    <a href="categorie/men.html" class="inline-block text-sm px-10 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0">Shop hier</a>
+
+	    <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <!-- More products... -->
+	    </div>
+	  </div>
+	</div>
+	<div class="py-16 bg-white"></div>
+
+
+	<div class="bg-red-400">
+	  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+	    <h2 class=" inline-block mr-8 text-2xl font-bold tracking-tight text-gray-900">WOMAN</h2>
+	    <a href="categorie/woman.html" class="inline-block text-sm px-10 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0">Shop hier</a>
+
+	    <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <!-- More products... -->
+	    </div>
+	  </div>
+	</div>
+	<div class="py-16 bg-white"></div>
+
+
+	<div class="bg-purple-400">
+	  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+	    <h2 class=" inline-block mr-8 text-2xl font-bold tracking-tight text-gray-900">KIDS</h2>
+	    <a href="categorie/men.html" class="inline-block text-sm px-10 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0">Shop hier</a>
+
+	    <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <div class="group relative">
+	        <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+	          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+	        </div>
+	        <div class="mt-4 flex justify-between">
+	          <div>
+	            <h3 class="text-sm text-gray-700">
+	              <a href="#">
+	                <span aria-hidden="true" class="absolute inset-0"></span>
+	                Basic Tee
+	              </a>
+	            </h3>
+	            <p class="mt-1 text-sm text-gray-500">Black</p>
+	          </div>
+	          <p class="text-sm font-medium text-gray-900">$35</p>
+	        </div>
+	      </div>
+
+	      <!-- More products... -->
+	    </div>
+	  </div>
+	</div>
+	<div class="py-16 bg-white"></div>
+
+
+</main>
+
+
+
+
+
+
+
+<footer class="bg-white dark:bg-gray-900">
+	<div class="mb-6 md:mb-0 p-8">
+            <a href="#" class="flex items-center">
+                <img src="foto's/logo.png" alt="Product screenshot" class="fill-current h-6 w-24 mr-3" width="305" height="109">
+                <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+            </a>
+        </div>
+    <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brand Center</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help center</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Licensing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Terms&Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Gent</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brugge</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Antwerpen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+            <a href="https://www.facebook.com/" >
+            	<span style="font-size: 2em; color: white;">
+		  			<i class="fab fa-facebook"></i>
+				</span>
+			</a>
+            <a href="https://www.instagram.com/">
+            	<span style="font-size: 2em; color: white;">
+		  			<i class="fab fa-instagram"></i>
+				</span>
+			</a>
+            <a href="https://twitter.com/">
+            	<span style="font-size: 2em; color: white;">
+		  			<i class="fab fa-twitter"></i>
+				</span>
+			</a>
+            <a href="https://outlook.office.com/mail/">
+            	<span style="font-size: 2em; color: white;">
+		  			<i class="fas fa-envelope"></i>
+				</span>
+			</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tailwind test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b01e9844c8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+  	gsap.from('.shoe', { duration: 2.5, y:'-100%'});
+  </script>
+</head>
+<body>
+
+
+
+<header>
+  <nav class="flex items-center justify-between flex-wrap bg-emerald-700 p-6">
+    <a href="../index.html" class="flex items-center flex-shrink-0 text-white mr-16">
+      <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-6 w-24 mr-3" width="305" height="109">
+        <span class="font-bold text-xl tracking-tight">SNKR</span>
+    </a>
+    
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="categorie/men.html" class="block mt-4 lg:inline-block lg:mt-0  font-semibold text-teal-200 hover:text-white mr-4">MEN</a>
+        <a href="categorie/woman.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white mr-4">WOMAN</a>
+        <a href="categorie/kids.html" class="block mt-4 lg:inline-block lg:mt-0 font-semibold text-teal-200 hover:text-white">KIDS</a>
+      </div>
+
+      <div>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign in</a>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white font-semibold border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Sign up</a>
+        <a href="../checkout/winkelmand.html" class="inline-block ml-16">
+          <span style="font-size: 1.5em; color: white;">
+            <i class="fas fa-cart-plus"></i>
+      </span>
+        </a>  
+    
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+<main class="pl-16 pr-16">
+
+
+
+	<section class="bg-white dark:bg-gray-900 m-4">
+	  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
+	      <div class="mx-auto max-w-screen-md sm:text-center">
+	          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+	          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+	      </div>
+	  </div>
+	</section>
+
+
+
+	    <div class="flex font-sans">
+		  <div class="flex-none w-48 relative">
+		   	<img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+		  </div>
+		  <form class="flex-auto p-6">
+		    <div class="flex flex-wrap">
+		      <h1 class="flex-auto text-lg font-semibold text-slate-900">
+		        Classic Utility Jacket
+		      </h1>
+		      <div class="text-lg font-semibold text-slate-500">
+		        $110.00
+		      </div>
+		      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+		        In stock
+		      </div>
+		    </div>
+		    <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+		      <div class="space-x-2 flex text-sm">
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XS
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="s" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            S
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="m" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            M
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="l" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            L
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xl" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XL
+		          </div>
+		        </label>
+		      </div>
+		    </div>
+		    <div class="flex space-x-4 mb-6 text-sm font-medium">
+		      <div class="flex-auto flex space-x-4">
+		        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+		          Buy now
+		        </button>
+		        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+		          View 3D
+		        </button>
+		      </div>
+		      <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+		        <span style="font-size: 1.5em; color:red ;">
+			  			<i class="fas fa-heart"></i>
+				</span>
+		      </button>
+		    </div>
+		    <h4 class="text-sm font-semibold text-slate-700">Description:</h4>
+		    <p class="text-sm text-slate-700">	    	
+		      	Free shipping on all continental US orders.
+		    </p>
+		  </form>
+		</div>
+		<div class="py-1 bg-white"></div>
+
+
+		<div class="flex font-sans">
+		  <div class="flex-none w-48 relative">
+		   	<img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+		  </div>
+		  <form class="flex-auto p-6">
+		    <div class="flex flex-wrap">
+		      <h1 class="flex-auto text-lg font-semibold text-slate-900">
+		        Classic Utility Jacket
+		      </h1>
+		      <div class="text-lg font-semibold text-slate-500">
+		        $110.00
+		      </div>
+		      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+		        In stock
+		      </div>
+		    </div>
+		    <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+		      <div class="space-x-2 flex text-sm">
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XS
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="s" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            S
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="m" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            M
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="l" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            L
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xl" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XL
+		          </div>
+		        </label>
+		      </div>
+		    </div>
+		    <div class="flex space-x-4 mb-6 text-sm font-medium">
+		      <div class="flex-auto flex space-x-4">
+		        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+		          Buy now
+		        </button>
+		        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+		          Add to bag
+		        </button>
+		      </div>
+		      <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+		        <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+		          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+		        </svg>
+		      </button>
+		    </div>
+		    <p class="text-sm text-slate-700">
+		      Free shipping on all continental US orders.
+		    </p>
+		  </form>
+		</div>
+		<div class="py-1 bg-white"></div>
+
+		<div class="flex font-sans">
+		  <div class="flex-none w-48 relative">
+		   	<img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+		  </div>
+		  <form class="flex-auto p-6">
+		    <div class="flex flex-wrap">
+		      <h1 class="flex-auto text-lg font-semibold text-slate-900">
+		        Classic Utility Jacket
+		      </h1>
+		      <div class="text-lg font-semibold text-slate-500">
+		        $110.00
+		      </div>
+		      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+		        In stock
+		      </div>
+		    </div>
+		    <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+		      <div class="space-x-2 flex text-sm">
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XS
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="s" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            S
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="m" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            M
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="l" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            L
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xl" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XL
+		          </div>
+		        </label>
+		      </div>
+		    </div>
+		    <div class="flex space-x-4 mb-6 text-sm font-medium">
+		      <div class="flex-auto flex space-x-4">
+		        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+		          Buy now
+		        </button>
+		        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+		          Add to bag
+		        </button>
+		      </div>
+		      <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+		        <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+		          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+		        </svg>
+		      </button>
+		    </div>
+		    <p class="text-sm text-slate-700">
+		      Free shipping on all continental US orders.
+		    </p>
+		  </form>
+		</div>
+		<div class="py-1 bg-white"></div>
+
+
+		<div class="flex font-sans">
+		  <div class="flex-none w-48 relative">
+		   	<img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+		  </div>
+		  <form class="flex-auto p-6">
+		    <div class="flex flex-wrap">
+		      <h1 class="flex-auto text-lg font-semibold text-slate-900">
+		        Classic Utility Jacket
+		      </h1>
+		      <div class="text-lg font-semibold text-slate-500">
+		        $110.00
+		      </div>
+		      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+		        In stock
+		      </div>
+		    </div>
+		    <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+		      <div class="space-x-2 flex text-sm">
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XS
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="s" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            S
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="m" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            M
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="l" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            L
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xl" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XL
+		          </div>
+		        </label>
+		      </div>
+		    </div>
+		    <div class="flex space-x-4 mb-6 text-sm font-medium">
+		      <div class="flex-auto flex space-x-4">
+		        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+		          Buy now
+		        </button>
+		        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+		          Add to bag
+		        </button>
+		      </div>
+		      <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+		        <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+		          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+		        </svg>
+		      </button>
+		    </div>
+		    <p class="text-sm text-slate-700">
+		      Free shipping on all continental US orders.
+		    </p>
+		  </form>
+		</div>
+		<div class="py-1 bg-white"></div>
+
+
+		<div class="flex font-sans">
+		  <div class="flex-none w-48 relative">
+		   	<img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+		  </div>
+		  <form class="flex-auto p-6">
+		    <div class="flex flex-wrap">
+		      <h1 class="flex-auto text-lg font-semibold text-slate-900">
+		        Classic Utility Jacket
+		      </h1>
+		      <div class="text-lg font-semibold text-slate-500">
+		        $110.00
+		      </div>
+		      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+		        In stock
+		      </div>
+		    </div>
+		    <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+		      <div class="space-x-2 flex text-sm">
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XS
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="s" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            S
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="m" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            M
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="l" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            L
+		          </div>
+		        </label>
+		        <label>
+		          <input class="sr-only peer" name="size" type="radio" value="xl" />
+		          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+		            XL
+		          </div>
+		        </label>
+		      </div>
+		    </div>
+		    <div class="flex space-x-4 mb-6 text-sm font-medium">
+		      <div class="flex-auto flex space-x-4">
+		        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+		          Buy now
+		        </button>
+		        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+		          Add to bag
+		        </button>
+		      </div>
+		      <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+		        <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+		          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+		        </svg>
+		      </button>
+		    </div>
+		    <p class="text-sm text-slate-700">
+		      Free shipping on all continental US orders.
+		    </p>
+		  </form>
+		</div>
+		<div class="py-1 bg-white"></div>
+
+
+</main>
+
+
+
+
+<footer class="bg-white dark:bg-gray-900">
+  <div class="mb-6 md:mb-0 p-8">
+            <a href="../index.html" class="flex items-center">
+                <img src="../foto's/logo.png" alt="Product screenshot" class="fill-current h-6 w-24 mr-3" width="305" height="109">
+                <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">SNKR</span>
+            </a>
+        </div>
+    <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brand Center</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Help center</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Twitter</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Facebook</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Licensing</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Terms&Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Locations</h2>
+            <ul class="text-gray-500 dark:text-gray-400">
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Gent</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Brugge</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline">Antwerpen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 mr-16 space-x-6 sm:justify-center md:mt-0">
+
+            <a href="https://www.facebook.com/" >
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-facebook"></i>
+        </span>
+      </a>
+            <a href="https://www.instagram.com/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-instagram"></i>
+        </span>
+      </a>
+            <a href="https://twitter.com/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fab fa-twitter"></i>
+        </span>
+      </a>
+            <a href="https://outlook.office.com/mail/">
+              <span style="font-size: 2em; color: white;">
+            <i class="fas fa-envelope"></i>
+        </span>
+      </a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
